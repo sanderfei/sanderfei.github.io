@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="theme-color" content="#33474d">
-	<title>Hexo</title>
+	<title>测试文章 | Hexo</title>
 	<link rel="stylesheet" href="/css/style.css" />
 	
       <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -29,62 +29,37 @@
 	</header>
 
 	<main>
-		<h1>Archive</h1>
-
-
-
-
-
-<ul class="archive">
+		<article>
 	
+		<h1>测试文章</h1>
 	
-		<li class="archive__year archive__expendable ">
-			<span>2023</span>
-			<ul>
-				
-					<li class="archive__month archive__expendable">
-						<span>June</span>
-						<ul>
-							
-								<li class="archive__entry"><a href="/2023/06/14/hello-world/">Hello World</a></li>
-							
-						</ul>
-					</li>
-
-				
-			</ul>
-		</li>
+	<div class="article__infos">
+		<span class="article__date">2021-06-10</span><br />
 		
-	
-		<li class="archive__year archive__expendable archive__expendable_collapsed">
-			<span>2021</span>
-			<ul>
-				
-					<li class="archive__month archive__expendable">
-						<span>June</span>
-						<ul>
-							
-								<li class="archive__entry"><a href="/2021/06/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/">测试文章</a></li>
-							
-						</ul>
-					</li>
-
-				
-			</ul>
-		</li>
+			<span class="article__category">
+				<a class="article-category-link" href="/categories/Java/">Java</a>
+			</span><br />
 		
-	
-</ul>
+		
+			<span class="article__tags">
+			  	<a class="article__tag-none-link" href="/tags/%E5%8E%9F%E5%88%9B/" rel="tag">原创</a>
+			</span>
+		
+	</div>
 
-<script>
-	const expandables = document.querySelectorAll('.archive__expendable')
-	for(let i = 0; i < expandables.length; i++) {
-		expandables[i].addEventListener('click', (e) => {
-			e.stopPropagation()
-			expandables[i].classList.toggle('archive__expendable_collapsed')
-		})
-	}
-</script>
+	
+
+	
+		<p>这是一篇测试文章</p>
+
+	
+
+	
+		<span class="different-posts"><a href="/2021/06/10/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" onclick="window.history.go(-1); return false;">⬅️ Go back </a></span>
+
+	
+
+</article>
 
 	</main>
 
