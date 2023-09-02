@@ -1,19 +1,19 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="google-site-verification" content="" />
-  <meta name="referrer" content="unsafe-url">
-  
-  <title>网络基础知识-协议分层与OSI参考模型</title>
-  <meta name="author" content="John Doe">
-  <meta name="description" content="OSI参考模型
+    <meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!--Description-->
 
 
 
+    <meta name="description" content="OSI参考模型
+
+
+
+层数
 分层名称
 功能
 每层功能概览
@@ -35,71 +35,180 @@
 5
 会话层
 通信管理：负责建立和断开通信连接
-何时建立连接、何时断开连接">
-  
-  
-  <meta property="og:title" content="网络基础知识-协议分层与OSI参考模型"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:site_name" content="Fei&#39;s Blogs"/>
-  <link href="/apple-touch-icon-precomposed.png" sizes="180x180" rel="apple-touch-icon-precomposed">
-  <link rel="alternate" href="/atom.xml" title="Fei&#39;s Blogs" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/m.min.css">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+何时建立连接、何时断"/>
+
+
+<!--Author-->
+
+    <meta name="author" content="John Doe"/>
+
+
+<!--Open Graph Title-->
+
+    <meta property="og:title" content="网络基础知识-协议分层与OSI参考模型"/>
+
+
+<!--Open Graph Description-->
+
+    <meta property="og:description" content="OSI参考模型
+
+
+
+层数
+分层名称
+功能
+每层功能概览
+
+
+
+7
+应用层
+针对特定应用的协议
+电子邮件、远程登陆、文件传输
+
+
+6
+表示层
+设备固有数据格式和网络标准数据格式的转换
+接受不同表现形式的信息，如文字流、图像、声音
+
+
+5
+会话层
+通信管理：负责建立和断开通信连接
+何时建立连接、何时断"/>
+
+
+<!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Fei&#39;s Blogs"/>
+
+<!--Type page-->
+
+    <meta property="og:type" content="article"/>
+
+
+<!--Page Cover-->
+
+
+    <meta property="og:image" content="http://example.com/img/home-bg.jpg"/>
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+
+
+
+
+    <meta name="twitter:image" content="http://example.com/img/home-bg.jpg"/>
+
+
+<!-- Title -->
+
+<title>网络基础知识-协议分层与OSI参考模型 | Fei&#39;s Blogs</title>
+
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+<!-- Custom CSS -->
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<!-- Custom Fonts -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Gallery -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/featherlight@1.4.0/src/featherlight.css" integrity="sha256-30DV/STftlyQ6v8yaOWlabammvCYtRJERLj/m0b3zno=" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/css/lightgallery.min.css">
+
+<!-- favicon -->
+
+<link rel="icon" href="/img/favicon.png"/>
+
+
+
+    <!-- Google Analytics -->
+    
+
 
 <meta name="generator" content="Hexo 6.3.0"></head>
+<!-- Head tag -->
 
 <body>
-  <a id="top"></a>
-  <div id="main">
-    <div class="main-ctnr">
-      <div class="behind">
-  <a href="/" class="back black-color">
-    <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-        <path d="M2 30 L30 2 M30 30 L2 2"></path>
-    </svg>
-  </a>
-  
-</div>
 
-
-  <article class="standard post">
-    <div class="title">
-      
-  
-    <h1 class="page-title center">
-        网络基础知识-协议分层与OSI参考模型
-    </h1>
-  
-
-
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top bg-transparent position-absolute w-100 p-0" id="nav">
+    <div class="container pl-0 pr-0">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <a class="navbar-brand text-white p-1 pl-3" href="/">Fei's Blogs</a>
+        </div>
+        <div class="navbar-nav float-right">
+            <button class="btn btn-link search-btn navbar-item" data-toggle="modal" data-target="#searchModal">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
     </div>
-    <div class="meta center">
-      <time datetime="2023-07-10T12:03:12.000Z" itemprop="datePublished">
-  <svg class="i-calendar" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9"></path>
-  </svg>
-  &nbsp;
-  2023-07-10
-</time>
+    <!-- /.container -->
+</nav>
 
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-
-
-
-
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+                <div class="post-heading text-white">
+                    <h1>网络基础知识-协议分层与OSI参考模型</h1>
+                    
+                </div>
+            </div>
+        </div>
     </div>
-    <hr>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                
+                    <span class="meta d-inline-block">
     
-      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#OSI%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B"><span class="toc-text">OSI参考模型</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E5%B1%82"><span class="toc-text">应用层</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E8%A1%A8%E7%A4%BA%E5%B1%82"><span class="toc-text">表示层</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%BC%9A%E8%AF%9D%E5%B1%82"><span class="toc-text">会话层</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%BC%A0%E8%BE%93%E5%B1%82"><span class="toc-text">传输层</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E5%B1%82"><span class="toc-text">网络层</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82"><span class="toc-text">数据链路层</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82"><span class="toc-text">物理层</span></a></li></ol></li></ol></li></ol>
     
-    <div class="picture-container">
-      
-    </div>
-    <h4 id="OSI参考模型"><a href="#OSI参考模型" class="headerlink" title="OSI参考模型"></a>OSI参考模型</h4><table>
+    <!-- Date -->
+    
+        <span class="post-meta-split">&nbsp;|&nbsp;</span>
+        <i class="far fa-calendar-check fa-fw"></i>
+        2023-07-10
+    
+    <!-- word count and read count -->
+    
+
+    
+
+    
+</span>  
+                
+                <h4 id="OSI参考模型"><a href="#OSI参考模型" class="headerlink" title="OSI参考模型"></a>OSI参考模型</h4><div class="table-responsive">
+<table class="table table-bordered table-striped">
 <thead>
 <tr>
-<th></th>
+<th>层数</th>
 <th>分层名称</th>
 <th>功能</th>
 <th>每层功能概览</th>
@@ -147,125 +256,239 @@
 <td>以01代表电压的高低、灯光的闪灭。界定连接器和网线的规格</td>
 <td>连接器与网线的规格</td>
 </tr>
-<tr>
-<td>OSI参考模型对通信中必要的功能做了很好的归纳。网络工程师在讨论协议相关问题时也经常以OSI参考模型的分层为原型。对于计算机网络的初学者，学习OSI参考模型可以说是通往成功的第一步。</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>不过，0SI参考模型终究是一个“模型”，它也只是对各层的作用做了一系列粗略的界定，并没有对协议和接口进行详细的定义。它对学习和设计协议只能起到一个引导的作用。因此，若想要了解协议的更多细节，还是有必要参考每个协议本身的具体规范</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>许多通信协议，都对应了OSI参考模型7个分层中的某层。通过这一点，可以大致了解该协议在整个通信功能中的位置和作用。</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 </tbody></table>
-<h6 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h6><p>为应用程序提供服务并规定应用程序中通信相关的细节。包括文件传输、电子邮件、远程登录（虚拟终端）等协议。</p>
-<h6 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h6><p>将应用处理的信息转换为适合网络传输的格式，或将来自下一层的数据转换为上层能够处理的格式。因此它主要负责数据格式的转换。<br>具体来说，就是将设备固有的数据格式转换为网络标准传输格式。不同设备对同一比特流解释的结果可能会不同。因此，使它们保持一致是这一层的主要作用。</p>
-<h6 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h6><p>负责建立和断开通信连接（数据流动的逻辑通路），以及数据的分割等数据传输相关的管理。</p>
-<h6 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h6><p>起着可靠传输的作用。只在通信双方节点上进行处理，而无需在路由器上处理。</p>
-<h6 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h6><p>将数据传输到目标地址。目标地址可以是多个网络通过路由器连接而成的某个地址。因此这一层主要负责寻址和路由选择。</p>
-<h6 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h6><p>负责物理层面上互连的、节点之间的通信传输。例如与1个以太网相连的2个节点之间的通信。<br>将0、1序列划分为具有意义的数据传送给对端（数据的生成与接收）。</p>
+<p>OSI参考模型对通信中必要的功能做了很好的归纳。网络工程师在讨论协议相关问题时也经常以OSI参考模型的分层为原型。对于计算机网络的初学者，学习OSI参考模型可以说是通往成功的第一步。<br>不过，0SI参考模型终究是一个“模型”，它也只是对各层的作用做了一系列粗略的界定，并没有对协议和接口进行详细的定义。它对学习和设计协议只能起到一个引导的作用。因此，若想要了解协议的更多细节，还是有必要参考每个协议本身的具体规范<br>许多通信协议，都对应了OSI参考模型7个分层中的某层。通过这一点，可以大致了解该协议在整个通信功能中的位置和作用。</p>
+<h4 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h4><p>为应用程序提供服务并规定应用程序中通信相关的细节。包括文件传输、电子邮件、远程登录（虚拟终端）等协议。</p>
+<h4 id="表示层"><a href="#表示层" class="headerlink" title="表示层"></a>表示层</h4><p>将应用处理的信息转换为适合网络传输的格式，或将来自下一层的数据转换为上层能够处理的格式。因此它主要负责数据格式的转换。<br>具体来说，就是将设备固有的数据格式转换为网络标准传输格式。不同设备对同一比特流解释的结果可能会不同。因此，使它们保持一致是这一层的主要作用。</p>
+<h4 id="会话层"><a href="#会话层" class="headerlink" title="会话层"></a>会话层</h4><p>负责建立和断开通信连接（数据流动的逻辑通路），以及数据的分割等数据传输相关的管理。</p>
+<h4 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h4><p>起着可靠传输的作用。只在通信双方节点上进行处理，而无需在路由器上处理。</p>
+<h4 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h4><p>将数据传输到目标地址。目标地址可以是多个网络通过路由器连接而成的某个地址。因此这一层主要负责寻址和路由选择。</p>
+<h4 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h4><p>负责物理层面上互连的、节点之间的通信传输。例如与1个以太网相连的2个节点之间的通信。<br>将0、1序列划分为具有意义的数据传送给对端（数据的生成与接收）。</p>
 <h6 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h6><p>负责0、1比特流（0、1序列）与电压的高低、光的闪灭之间的互换。</p>
 
+            </div>
 
-  </article>
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <div class="busuanzi center">
-    page PV:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
-    site PV:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
-    site UV:&nbsp;<span id="busuanzi_value_site_uv"></span>
-  </div>
+            <!-- Post information -->
+            
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <ul class="pagination d-block text-center">
+            
+                <li class="previous page-item d-inline"><a href="/2023/09/02/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E5%9C%B0%E5%9D%80-%E7%BD%91%E7%BB%9C%E6%9E%84%E6%88%90%E8%A6%81%E7%B4%A0/" class="page-link float-left">&larr;  Newer</a></li>
+            
+            
+                <li class="next page-item d-inline"><a href="/2023/07/10/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8F%91%E5%B1%95%E7%9A%847%E4%B8%AA%E9%98%B6%E6%AE%B5/" class="page-link float-right">Older  &rarr;</a></li>
+            
+        </ul>
+    </div>
+
+
+            
+                <!-- Comments -->
+                
+
+                
+
+            
+
+        </div>
+    </div>
+</article> 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    <style>
+        #toc-content .toc-link::before {
+            background-color: transparent;
+            max-height: 25px;
+        }
+
+        #toc-content .toc-link.is-active-link::before {
+            background-color: #404040;
+        }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <div class="ui-toc dropup scrollspy-body pull-right" style="right: 3%;">
+        <button type="button" class="toc-btn btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+            <i class="fas fa-list"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right p-2"  aria-labelledby="tocLabel">
+            <div class="toc-widget">
+                <div id="toc-content" class="text-truncate">
+                </div>
+            </div>
+            <div class="toc-menu pt-3 pl-4">
+                <a class="expand-toggle d-block py-1" href="#"><span class="expand-text">Expand all</span><span class="close-text" style="display: none;">Collapse all</span></a>
+                <a class="back-to-top d-block py-1" href="#">Back to top</a>
+                <a class="go-to-bottom d-block py-1" href="#">Go to bottom</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '#toc-content',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: 'article',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    </script>
 
 
     
 
 
+    <!-- Footer -->
+    <hr />
 
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-center">
+                <ul class="list-inline">
+                    
 
+                    
 
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <ul class="copyright footer-menu list-inline">
+                    
+                    
+                        <li class="list-inline-item">
+                            
+                            
+                            <a href="/">
+                                
+                                    Home
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/archives">
+                                
+                                    Archives
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/tags">
+                                
+                                    Tags
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/categories">
+                                
+                                    Categories
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/about">
+                                
+                                    About
+                                
+                            </a>
+                        </li>
+                    
+                </ul>
+                <p class="copyright footer-author">
+                    &copy; -2023 
+                    <a rel="external" class="copyright-link" href="" target="_blank">John Doe</a><br/>
+                    Powered by <a rel="external" class="copyright-link" href="https://hexo.io/" target="_blank">Hexo</a>  
+                    <span class="copyright-split">&nbsp;|&nbsp;&nbsp;</span>
+                    Theme <a rel="external" class="copyright-link" href="https://github.com/luswdev/hexo-theme-clean.git" target="_blank">Clean</a>
+                    
+                    
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
-  <footer class="page-footer"><div class="clearfix">
-</div>
-<!-- <div class="right-foot"> -->
-<!--     <div class="firstrow"> -->
-<!--         <a href="#top" target="_self"> -->
-<!--         <svg class="i-caret-right" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"> -->
-<!--             <path d="M10 30 L26 16 10 2 Z"></path> -->
-<!--         </svg> -->
-<!--         </a> -->
-<!--         © XXX 2016-2020 -->
-<!--     </div> -->
-<!--     <div class="secondrow"> -->
-<!--         <a target="_blank" rel="noopener" href="https://github.com/sanderfei/sanderfei.github.io"> -->
-<!--         Sander's Blogs -->
-<!--         </a> -->
-<!--     </div> -->
-<!-- </div> -->
-<div class="clearfix">
-</div>
 </footer>
-  <script type="text/javascript">
-
-// disqus scripts
 
 
-// dropdown scripts
-function $(s) {
-    return document.querySelector(s)
-  }
+    <!-- After footer scripts -->
+    <!-- jQuery -->
+<script src="//cdn.jsdelivr.net/npm/jquery@2.1.4/dist/jquery.min.js"></script>
 
-  function $$(s) {
-    return document.querySelectorAll(s)
-  }
-  var dropDownElArr = $$('.dropdown')
-  for (var i = 0; i < dropDownElArr.length; i += 1) {
-    dropDownElArr[i].addEventListener('click', function(event) {
-      var content = this.querySelector('.dropdown-content')
-      event.stopPropagation()
-      if (content.className.indexOf('open') < 0) {
-        content.classList.add('open')
-      } else {
-        content.classList.remove('open')
-      }
-    })
-  }
-  document.body.addEventListener('click', function() {
-    var dropDownContentElArr = $$('.dropdown-content')
-    for (var i = 0; i < dropDownContentElArr.length; i += 1) {
-      dropDownContentElArr[i].classList.remove('open')
-    }
-  })
+<!-- For drop down -->
+<script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 
-  // smooth scroll
-  $$('a[href^="#"]').forEach(e=>{
-    e.addEventListener("click", function(e) {
-      e.preventDefault();
-      var t = this.getAttribute("href").substr(1);
-      $(`[id='${decodeURIComponent(t)}']`).scrollIntoView({
-        behavior: "smooth"
-      }),
-      t === "top" ? history.replaceState(null, null, " ") : history.pushState(null, null, `#${t}`)
-    })
-  })
+<!-- Bootstrap -->
+<script src="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+<!-- Gallery -->
+<script src="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/js/lightgallery-all.min.js"></script>
+<!-- Busuanzi -->
 
-// search
-var searchEl = document.querySelector("#local-search-input")
-if (searchEl) searchEl.addEventListener('keydown', function(e) {
-  if (e.key === 'Enter') {
-    var s = e.target.value
-    window.open('//www.google.com/search?q=site:http://example.com%20' + s, '_blank').focus()
-  }
-})
 
+<!-- Search script -->
+
+<script src="/js/search.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        searchFunc( '/search.xml' , 'searchInput', 'searchResult');
+    });
 </script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+    <!-- Search Modal -->
+    <!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content overflow-auto">
+            <div class="modal-header">
+                <input type="text" class="form-control" placeholder="Searching Keywords..." id="searchInput">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div id="searchResult">
+                    <div class="search-empty text-center text-muted p-5">
+                        <i class="far fa-meh"></i>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>

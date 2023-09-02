@@ -1,113 +1,195 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="google-site-verification" content="" />
-  <meta name="referrer" content="unsafe-url">
-  
-  <title>网络基础知识-地址&amp;网络构成要素</title>
-  <meta name="author" content="John Doe">
-  <meta name="description" content="通信传输中，发送端和接收端可以被视为通信主体。它们都能由一个所谓“地址”的信息加以标识出来。在实际的网络通信当中，每一层的协议所使用的地址都不尽相同。例如，TCP&amp;#x2F;IP通信中使用MAC地址、IP地址、端口号等信息作为地址标识。甚至在应用层中，可以将电子邮件地址作为网络通信的地址。
-地址的唯">
-  
-  
-  <meta property="og:title" content="网络基础知识-地址&amp;网络构成要素"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:site_name" content="Fei&#39;s Blogs"/>
-  <link href="/apple-touch-icon-precomposed.png" sizes="180x180" rel="apple-touch-icon-precomposed">
-  <link rel="alternate" href="/atom.xml" title="Fei&#39;s Blogs" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/m.min.css">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+    <meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<!--Description-->
+
+
+
+    <meta name="description" content="通信传输中，发送端和接收端可以被视为通信主体。它们都能由一个所谓“地址”的信息加以标识出来。在实际的网络通信当中，每一层的协议所使用的地址都不尽相同。例如，TCP&amp;#x2F;IP通信中使用MAC地址、IP地址、端口号等信息作为地址标识。甚至在应用层中，可以将电子邮件地址作为网络通信的地址。
+地址的唯"/>
+
+
+<!--Author-->
+
+    <meta name="author" content="John Doe"/>
+
+
+<!--Open Graph Title-->
+
+    <meta property="og:title" content="网络基础知识-地址&amp;网络构成要素"/>
+
+
+<!--Open Graph Description-->
+
+    <meta property="og:description" content="通信传输中，发送端和接收端可以被视为通信主体。它们都能由一个所谓“地址”的信息加以标识出来。在实际的网络通信当中，每一层的协议所使用的地址都不尽相同。例如，TCP&amp;#x2F;IP通信中使用MAC地址、IP地址、端口号等信息作为地址标识。甚至在应用层中，可以将电子邮件地址作为网络通信的地址。
+地址的唯"/>
+
+
+<!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Fei&#39;s Blogs"/>
+
+<!--Type page-->
+
+    <meta property="og:type" content="article"/>
+
+
+<!--Page Cover-->
+
+
+    <meta property="og:image" content="http://example.com/img/home-bg.jpg"/>
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+
+
+
+
+    <meta name="twitter:image" content="http://example.com/img/home-bg.jpg"/>
+
+
+<!-- Title -->
+
+<title>网络基础知识-地址&amp;网络构成要素 | Fei&#39;s Blogs</title>
+
+<!-- Bootstrap Core CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+
+<!-- Custom CSS -->
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<!-- Custom Fonts -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css" />
+<link href="//fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Gallery -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/featherlight@1.4.0/src/featherlight.css" integrity="sha256-30DV/STftlyQ6v8yaOWlabammvCYtRJERLj/m0b3zno=" crossorigin="anonymous">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/css/lightgallery.min.css">
+
+<!-- favicon -->
+
+<link rel="icon" href="/img/favicon.png"/>
+
+
+
+    <!-- Google Analytics -->
+    
+
 
 <meta name="generator" content="Hexo 6.3.0"></head>
+<!-- Head tag -->
 
 <body>
-  <a id="top"></a>
-  <div id="main">
-    <div class="main-ctnr">
-      <div class="behind">
-  <a href="/" class="back black-color">
-    <svg class="i-close" viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-        <path d="M2 30 L30 2 M30 30 L2 2"></path>
-    </svg>
-  </a>
-  
-</div>
 
-
-  <article class="standard post">
-    <div class="title">
-      
-  
-    <h1 class="page-title center">
-        网络基础知识-地址&amp;网络构成要素
-    </h1>
-  
-
-
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top bg-transparent position-absolute w-100 p-0" id="nav">
+    <div class="container pl-0 pr-0">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <a class="navbar-brand text-white p-1 pl-3" href="/">Fei's Blogs</a>
+        </div>
+        <div class="navbar-nav float-right">
+            <button class="btn btn-link search-btn navbar-item" data-toggle="modal" data-target="#searchModal">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
     </div>
-    <div class="meta center">
-      <time datetime="2023-09-02T07:02:46.000Z" itemprop="datePublished">
-  <svg class="i-calendar" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-    <path d="M2 6 L2 30 30 30 30 6 Z M2 15 L30 15 M7 3 L7 9 M13 3 L13 9 M19 3 L19 9 M25 3 L25 9"></path>
-  </svg>
-  &nbsp;
-  2023-09-02
-</time>
+    <!-- /.container -->
+</nav>
 
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-
-
-
-
+<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+                <div class="post-heading text-white">
+                    <h1>网络基础知识-地址&网络构成要素</h1>
+                    
+                </div>
+            </div>
+        </div>
     </div>
-    <hr>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Main Content -->
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                
+                    <span class="meta d-inline-block">
     
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9C%B0%E5%9D%80%E7%9A%84%E5%94%AF%E4%B8%80%E6%80%A7"><span class="toc-text">地址的唯一性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E7%9A%84%E6%9E%84%E6%88%90%E8%A6%81%E7%B4%A0"><span class="toc-text">网络的构成要素</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E4%BF%A1%E5%AA%92%E4%BB%8B%E4%B8%8E%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF"><span class="toc-text">通信媒介与数据链路</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E4%BC%A0%E8%BE%93%E9%80%9F%E7%8E%87%EF%BC%9A%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93%E8%BF%87%E7%A8%8B%E4%B8%AD%EF%BC%8C%E4%B8%A4%E4%B8%AA%E8%AE%BE%E5%A4%87%E4%B9%8B%E9%97%B4%E6%95%B0%E6%8D%AE%E6%B5%81%E5%8A%A8%E7%9A%84%E7%89%A9%E7%90%86%E9%80%9F%E5%BA%A6%E3%80%82%E6%8C%87%E5%8D%95%E4%BD%8D%E6%97%B6%E9%97%B4%E5%86%85%E4%BC%A0%E8%BE%93%E7%9A%84%E6%95%B0%E6%8D%AE%E9%87%8F%EF%BC%8C%E5%8F%88%E8%A2%AB%E6%88%90%E4%B8%BA%E5%B8%A6%E5%AE%BD%E3%80%82"><span class="toc-text">传输速率：数据传输过程中，两个设备之间数据流动的物理速度。指单位时间内传输的数据量，又被成为带宽。</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%90%9E%E5%90%90%E9%87%8F%EF%BC%9A%E4%B8%BB%E6%9C%BA%E4%B9%8B%E9%97%B4%E7%9A%84%E5%AE%9E%E9%99%85%E4%BC%A0%E8%BE%93%E9%80%9F%E7%8E%87%E3%80%82%E4%B8%8D%E4%BB%85%E7%94%A8%E6%9D%A5%E8%A1%A1%E9%87%8F%E5%B8%A6%E5%AE%BD%EF%BC%8C%E5%90%8C%E6%97%B6%E4%B9%9F%E6%98%AF%E8%A1%A1%E9%87%8F%E4%B8%BB%E6%9C%BACPU%E5%A4%84%E7%90%86%E8%83%BD%E5%8A%9B%E3%80%81%E7%BD%91%E7%BB%9C%E6%8B%A5%E5%A0%B5%E7%A8%8B%E5%BA%A6%E3%80%81%E6%8A%A5%E6%96%87%E4%B8%AD%E6%95%B0%E6%8D%AE%E5%AD%97%E6%AE%B5%E7%9A%84%E5%8D%A0%E6%9C%89%E4%BB%BD%E9%A2%9D%E7%AD%89%E4%BF%A1%E6%81%AF%E3%80%82"><span class="toc-text">吞吐量：主机之间的实际传输速率。不仅用来衡量带宽，同时也是衡量主机CPU处理能力、网络拥堵程度、报文中数据字段的占有份额等信息。</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E5%8D%A1%EF%BC%9A%E4%BD%BF%E5%BE%97%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%9E%E7%BD%91%E7%9A%84%E8%AE%BE%E5%A4%87"><span class="toc-text">网卡：使得计算机连网的设备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E7%BB%A7%E5%99%A8%EF%BC%9A%E4%BB%8E%E7%89%A9%E7%90%86%E5%B1%82%E4%B8%8A%E5%BB%B6%E9%95%BF%E7%BD%91%E7%BB%9C%E7%9A%84%E8%AE%BE%E5%A4%87"><span class="toc-text">中继器：从物理层上延长网络的设备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E6%A1%A5-x2F-2%E5%B1%82%E4%BA%A4%E6%8D%A2%E6%9C%BA%EF%BC%9A%E4%BB%8E%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82%E5%BB%B6%E9%95%BF%E7%BD%91%E7%BB%9C%E7%9A%84%E8%AE%BE%E5%A4%87"><span class="toc-text">网桥&#x2F;2层交换机：从数据链路层延长网络的设备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%AF%E7%94%B1%E5%99%A8-x2F-3%E5%B1%82%E4%BA%A4%E6%8D%A2%E6%9C%BA%EF%BC%9A%E9%80%9A%E8%BF%87%E7%BD%91%E7%BB%9C%E5%B1%82%E8%BD%AC%E5%8F%91%E5%88%86%E7%BB%84%E6%95%B0%E6%8D%AE%E7%9A%84%E8%AE%BE%E5%A4%87"><span class="toc-text">路由器&#x2F;3层交换机：通过网络层转发分组数据的设备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%EF%BD%9E7%E5%B1%82%E4%BA%A4%E6%8D%A2%E6%9C%BA%EF%BC%9A%E5%A4%84%E7%90%86%E4%BC%A0%E8%BE%93%E5%B1%82%E4%BB%A5%E4%B8%8A%E5%90%84%E5%B1%82%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%BE%93%E7%9A%84%E8%AE%BE%E5%A4%87"><span class="toc-text">4～7层交换机：处理传输层以上各层网络传输的设备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E5%85%B3%EF%BC%9A%E8%BD%AC%E6%8D%A2%E5%8D%8F%E8%AE%AE%E7%9A%84%E8%AE%BE%E5%A4%87"><span class="toc-text">网关：转换协议的设备</span></a></li></ol>
     
-    <div class="picture-container">
-      
-    </div>
-    <p>通信传输中，发送端和接收端可以被视为通信主体。它们都能由一个所谓“地址”的信息加以标识出来。<br>在实际的网络通信当中，每一层的协议所使用的地址都不尽相同。例如，TCP&#x2F;IP通信中使用MAC地址、IP地址、端口号等信息作为地址标识。<br>甚至在应用层中，可以将电子邮件地址作为网络通信的地址。</p>
+    <!-- Date -->
+    
+        <span class="post-meta-split">&nbsp;|&nbsp;</span>
+        <i class="far fa-calendar-check fa-fw"></i>
+        2023-09-02
+    
+    <!-- word count and read count -->
+    
+
+    
+
+    
+</span>  
+                
+                <p>通信传输中，发送端和接收端可以被视为通信主体。它们都能由一个所谓“地址”的信息加以标识出来。<br>在实际的网络通信当中，每一层的协议所使用的地址都不尽相同。例如，TCP&#x2F;IP通信中使用MAC地址、IP地址、端口号等信息作为地址标识。<br>甚至在应用层中，可以将电子邮件地址作为网络通信的地址。</p>
 <h3 id="地址的唯一性"><a href="#地址的唯一性" class="headerlink" title="地址的唯一性"></a>地址的唯一性</h3><p>当地址总数并不是很多的情况下，有了唯一地址就可以定位相互通信的主体。然而，当地址的总数越来越多时，如何高效地从中找出通信的目标地址将成为一个重要的问题。为此人们发现地址除了具有唯一性还需要具有层次性。<br>例如，电话号码包含国家区号和国内区号，通信地址包含国名、省名、市名和区名等。正是有了这种层次分类才能更加快速地定位某一个地址。<br>MAC地址和IP地址在标识一个通信主体时虽然都具有唯一性，但是它们当中只有<strong>IP地址</strong>具有<strong>层次性</strong>。<br><strong>MAC地址</strong><br>MAC地址由设备的制造广商针对每块网卡进行分别指定。人们可以通过制造商识别号、制造商内部产品编号以及产品通用编号确保MAC地址的唯一性。<br>然而，人们无法确定哪家厂商的哪个网卡被用到了哪个地方。虽然MAC地址中的制造商识别号、产品编号以及通用编号等信息在某种程度上也具有一定的层次性，但是对于寻找地址并没有起到任何作用，所以不能算作有层次的地址。正因如此，虽然MAC地址是真正负责最终通信的地址，但是在实际寻址过程中，IP地址却必不可少。<br><strong>IP地址</strong><br>IP地址又是怎样实现分层的呢？<br>一方面，IP地址由<em>网络号</em>和<em>主机号</em>两部分组成。即使通信主体的IP地址不同，若主机号不同，网络号相同，说明它们处于同一个网段。通常，同处一个网段的主机也都属于同一个部门或集团组织。<br>另一方面，网络号相同的主机在组织结构、提供商类型和地域分布上都比较集中，也为IP寻址带来了极大的方便。这也是为什么说IP地址具有层次性的原因。<br>网络传输中，每个节点会根据分组数据的地址信息，来判断该报文应该由哪个网卡发送出去。为此，各个地址会参考一个发出接口列表。在这一点上MAC导址与IP寻址是一样的。只不过MAC寻址中所参考的这张表叫做<strong>地址转发表</strong>，而IP寻址中所参考的叫做<strong>路由控制表</strong>。MAC地址转发表中所记录的是实际的MAC地址本身，而路由表中记录的IP地址则是集中了之后的网络号。</p>
 <h3 id="网络的构成要素"><a href="#网络的构成要素" class="headerlink" title="网络的构成要素"></a>网络的构成要素</h3><p>搭建一套网络环境要设计各式各样的电缆和网络设备。在此仅介绍连接计算机与计算机的硬件设备。</p>
 <h3 id="通信媒介与数据链路"><a href="#通信媒介与数据链路" class="headerlink" title="通信媒介与数据链路"></a>通信媒介与数据链路</h3><p>计算机之间通过电缆相互连接。电缆可以分为很多种，包括双绞线电缆、光电缆、同轴电缆、串行电缆等。根据数据链路的不同选用的电缆类型也不尽同。而媒介本身也可以被划分为电波、微波等不同类型的电磁波。</p>
-<h6 id="传输速率：数据传输过程中，两个设备之间数据流动的物理速度。指单位时间内传输的数据量，又被成为带宽。"><a href="#传输速率：数据传输过程中，两个设备之间数据流动的物理速度。指单位时间内传输的数据量，又被成为带宽。" class="headerlink" title="传输速率：数据传输过程中，两个设备之间数据流动的物理速度。指单位时间内传输的数据量，又被成为带宽。"></a>传输速率：数据传输过程中，两个设备之间数据流动的物理速度。指单位时间内传输的数据量，又被成为带宽。</h6><h6 id="吞吐量：主机之间的实际传输速率。不仅用来衡量带宽，同时也是衡量主机CPU处理能力、网络拥堵程度、报文中数据字段的占有份额等信息。"><a href="#吞吐量：主机之间的实际传输速率。不仅用来衡量带宽，同时也是衡量主机CPU处理能力、网络拥堵程度、报文中数据字段的占有份额等信息。" class="headerlink" title="吞吐量：主机之间的实际传输速率。不仅用来衡量带宽，同时也是衡量主机CPU处理能力、网络拥堵程度、报文中数据字段的占有份额等信息。"></a>吞吐量：主机之间的实际传输速率。不仅用来衡量带宽，同时也是衡量主机CPU处理能力、网络拥堵程度、报文中数据字段的占有份额等信息。</h6><ul>
-<li><h3 id="网卡：使得计算机连网的设备"><a href="#网卡：使得计算机连网的设备" class="headerlink" title="网卡：使得计算机连网的设备"></a>网卡：使得计算机连网的设备</h3><ul>
+<h5 id="传输速率：数据传输过程中，两个设备之间数据流动的物理速度。指单位时间内传输的数据量，又被成为带宽。"><a href="#传输速率：数据传输过程中，两个设备之间数据流动的物理速度。指单位时间内传输的数据量，又被成为带宽。" class="headerlink" title="传输速率：数据传输过程中，两个设备之间数据流动的物理速度。指单位时间内传输的数据量，又被成为带宽。"></a>传输速率：数据传输过程中，两个设备之间数据流动的物理速度。指单位时间内传输的数据量，又被成为带宽。</h5><h5 id="吞吐量：主机之间的实际传输速率。不仅用来衡量带宽，同时也是衡量主机CPU处理能力、网络拥堵程度、报文中数据字段的占有份额等信息。"><a href="#吞吐量：主机之间的实际传输速率。不仅用来衡量带宽，同时也是衡量主机CPU处理能力、网络拥堵程度、报文中数据字段的占有份额等信息。" class="headerlink" title="吞吐量：主机之间的实际传输速率。不仅用来衡量带宽，同时也是衡量主机CPU处理能力、网络拥堵程度、报文中数据字段的占有份额等信息。"></a>吞吐量：主机之间的实际传输速率。不仅用来衡量带宽，同时也是衡量主机CPU处理能力、网络拥堵程度、报文中数据字段的占有份额等信息。</h5><ul>
+<li><h4 id="网卡：使得计算机连网的设备"><a href="#网卡：使得计算机连网的设备" class="headerlink" title="网卡：使得计算机连网的设备"></a>网卡：使得计算机连网的设备</h4><ul>
 <li>任何一台计算机连接网络时，必须要使用网卡（全称为网络接口卡）。网络接口卡（NIC）有时也被叫做网络适配器、网卡、LAN卡。</li>
 </ul>
 </li>
-<li><h3 id="中继器：从物理层上延长网络的设备"><a href="#中继器：从物理层上延长网络的设备" class="headerlink" title="中继器：从物理层上延长网络的设备"></a>中继器：从物理层上延长网络的设备</h3><ul>
+<li><h4 id="中继器：从物理层上延长网络的设备"><a href="#中继器：从物理层上延长网络的设备" class="headerlink" title="中继器：从物理层上延长网络的设备"></a>中继器：从物理层上延长网络的设备</h4><ul>
 <li>中继器（Repeater）是在OSI模型的第1层——<strong>物理层</strong>面上延长网络的设备。由电缆传过来的电信号或光信号经由中继器的波形调整和放大再传给另一个电缆。</li>
 <li>一般情况下，中继器的两端连接的是相同的通信媒介，但有的中继器也可以完成不同媒介之间的转接工作。例如，可以在同轴电缆与光缆之间调整信号。然而，在这种情况下，中继器也只是单纯负责信号在0和1比特流之间的替换，并不负责判断数据是否有错误。同时，它只负责将电信号转换为光信号，因此不能在传输速度不同的媒介之间转发。</li>
 <li>通过中继器而进行的网络延长，其距离也并非可以无限扩大。例如一个10Mbps的以太网最多可以用4个中继器分段连接，而一个100Mbps的以太网则最多只能连两个中继器。</li>
 <li>有些中继器可以提供多个端口服务。这种中继器被称作中继集线器或集线器。因此，集线器也可以看作是多口中继器，每个端口都可以成为一个中继器。</li>
 </ul>
 </li>
-<li><h3 id="网桥-x2F-2层交换机：从数据链路层延长网络的设备"><a href="#网桥-x2F-2层交换机：从数据链路层延长网络的设备" class="headerlink" title="网桥&#x2F;2层交换机：从数据链路层延长网络的设备"></a>网桥&#x2F;2层交换机：从数据链路层延长网络的设备</h3><ul>
+<li><h4 id="网桥-x2F-2层交换机：从数据链路层延长网络的设备"><a href="#网桥-x2F-2层交换机：从数据链路层延长网络的设备" class="headerlink" title="网桥&#x2F;2层交换机：从数据链路层延长网络的设备"></a>网桥&#x2F;2层交换机：从数据链路层延长网络的设备</h4><ul>
 <li>网桥是在OSI棋型的第2层——<strong>数据链路层</strong>面上<strong>连接两个网络</strong>的设备。它能够识别数据链路层中的数据，并将这些数据临时存储于内存，再重新生成信号作为一个全新的转发给相连的另一个网段。由于能够存储这些数据帧，网桥能够连接10BASE-T与100BASE-TX等传输速率完全不同的数据链路，并且不限制连接网段的个数。</li>
 <li>数据链路的数据中有一个数据位叫做FCS，用以校验数据是否正确送达目的地。网桥通过检查这个域中的值，将那些损坏的数据丢弃，从而避免发送给其他的网段。此外，网桥还能通过地址自学机制和过滤功能控制网络流量。</li>
 <li>有些网桥能够判断是否将数据报文转发给相邻的网段，这种网桥被称作自学式网桥。这类网桥会记住曾经通过自己转发的所有数据的MAC地址，并保存到自己里的内存表中。由此，可以判断哪个网段中包含持有哪类MAC地址的设备。</li>
 <li>以太网等网络汇总经常使用的<strong>交换集线器</strong>，基本也属于网桥的一种。交换集线器中国呢连接电缆的每个端口都能提供类似网桥的功能。</li>
 </ul>
 </li>
-<li><h3 id="路由器-x2F-3层交换机：通过网络层转发分组数据的设备"><a href="#路由器-x2F-3层交换机：通过网络层转发分组数据的设备" class="headerlink" title="路由器&#x2F;3层交换机：通过网络层转发分组数据的设备"></a>路由器&#x2F;3层交换机：通过网络层转发分组数据的设备</h3><ul>
+<li><h4 id="路由器-x2F-3层交换机：通过网络层转发分组数据的设备"><a href="#路由器-x2F-3层交换机：通过网络层转发分组数据的设备" class="headerlink" title="路由器&#x2F;3层交换机：通过网络层转发分组数据的设备"></a>路由器&#x2F;3层交换机：通过网络层转发分组数据的设备</h4><ul>
 <li>路由器是在OSI模型的第3层——<strong>网络层</strong>面上连接两个网络、并对分组报文进行转发的设备。网桥是根据物理地址（MAC地址）进行处理，而路由器&#x2F;3层交换机则是根据IP地址进行处理的。由此，TCP&#x2F;IP中网络层的地址就成为了IP地址。</li>
 <li>路由器可以连接不同的数据链路。现在，人们在家或办公室里连接互联网时所使用的宽带路由器也是路由器的一种。</li>
 <li>路由器还有分担网络负荷的作用，甚至有些路由器具备一定的网络安全功能。因此，在连接网络与网络的设备当中，路由器起着极为重要的作用。</li>
 </ul>
 </li>
-<li><h3 id="4～7层交换机：处理传输层以上各层网络传输的设备"><a href="#4～7层交换机：处理传输层以上各层网络传输的设备" class="headerlink" title="4～7层交换机：处理传输层以上各层网络传输的设备"></a>4～7层交换机：处理传输层以上各层网络传输的设备</h3><ul>
+<li><h4 id="4～7层交换机：处理传输层以上各层网络传输的设备"><a href="#4～7层交换机：处理传输层以上各层网络传输的设备" class="headerlink" title="4～7层交换机：处理传输层以上各层网络传输的设备"></a>4～7层交换机：处理传输层以上各层网络传输的设备</h4><ul>
 <li>4<del>7层交换机负责处理OSI模型中从<strong>传输层至应用层</strong>的数据。如果用TCP&#x2F;IP分层模型来表述，4</del>7层交换机就是以TCP等协议的传输层及其上面的应用层为基础，分析收发数据，并对其进行特定的处理。</li>
 <li>例如：对应并发量大的一些企业级Web站点，这些服务器前端访问的人口地址通常只有一个（企业为了使用者的方便，只会向最终用户开放个统一的访问URL）。为了能通过同一个URL将前端访问分发到后台多个服务器上，可以在这些服务器的前端加一个负载均衡器。这种负载均衡器就是4～7层交换机的一种。</li>
 <li>此外，实际通信当中，人们希望在网络比较拥堵的时候，优先处理像语音这类对及时性要求较高的通信请求，放缓处理像邮件或数据转发等稍有延退也并无大碍的通信请求。这种处理被称为<strong>带宽控制</strong>，也是4～7层交换机的重要功能之一。除此之外，广域网加速器、特殊应用访问加速、防火墙等都属于4～7层交换机的应用场景。</li>
 </ul>
 </li>
-<li><h3 id="网关：转换协议的设备"><a href="#网关：转换协议的设备" class="headerlink" title="网关：转换协议的设备"></a>网关：转换协议的设备</h3><ul>
+<li><h4 id="网关：转换协议的设备"><a href="#网关：转换协议的设备" class="headerlink" title="网关：转换协议的设备"></a>网关：转换协议的设备</h4><ul>
 <li>网关是OSI参考模型中负责将从<strong>传输层到应用层</strong>的数据进行<strong>转换</strong>和<strong>转发</strong>的设备。它与4~7层交换机一样都是处理传输层及以上的数据，但是网关不仅转发数据还负责对数据进行转换，它通常会使用一个表示层或应用层网关，在两个不能进行直接通信的协议之间进行翻译，最终实现两者之间的通信。</li>
 <li>此外，为了网络控制以及出于安全的考虑，有时会使用<strong>代理服务器</strong>，这种代理服务器也是网关的一种：<strong>应用网关</strong>。这样客户端和服务器之间无需在网络层直接通信，而是从传输层到应用层对数据和访问进行各种处理和控制。</li>
 <li><strong>防火墙</strong>就是一款通过网关通信，针对不同应用提高安全性的产品。</li>
@@ -115,98 +197,227 @@
 </li>
 </ul>
 
+            </div>
 
-  </article>
-  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <div class="busuanzi center">
-    page PV:&nbsp;<span id="busuanzi_value_page_pv"></span>&nbsp;・&nbsp;
-    site PV:&nbsp;<span id="busuanzi_value_site_pv"></span>&nbsp;・&nbsp;
-    site UV:&nbsp;<span id="busuanzi_value_site_uv"></span>
-  </div>
+            <!-- Post information -->
+            
+            
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+        <ul class="pagination d-block text-center">
+            
+            
+                <li class="next page-item d-inline"><a href="/2023/07/10/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86-%E5%8D%8F%E8%AE%AE%E5%88%86%E5%B1%82%E4%B8%8EOSI%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/" class="page-link float-right">Older  &rarr;</a></li>
+            
+        </ul>
+    </div>
+
+
+            
+                <!-- Comments -->
+                
+
+                
+
+            
+
+        </div>
+    </div>
+</article> 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+    <style>
+        #toc-content .toc-link::before {
+            background-color: transparent;
+            max-height: 25px;
+        }
+
+        #toc-content .toc-link.is-active-link::before {
+            background-color: #404040;
+        }
+    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+    <div class="ui-toc dropup scrollspy-body pull-right" style="right: 3%;">
+        <button type="button" class="toc-btn btn btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+            <i class="fas fa-list"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-right p-2"  aria-labelledby="tocLabel">
+            <div class="toc-widget">
+                <div id="toc-content" class="text-truncate">
+                </div>
+            </div>
+            <div class="toc-menu pt-3 pl-4">
+                <a class="expand-toggle d-block py-1" href="#"><span class="expand-text">Expand all</span><span class="close-text" style="display: none;">Collapse all</span></a>
+                <a class="back-to-top d-block py-1" href="#">Back to top</a>
+                <a class="go-to-bottom d-block py-1" href="#">Go to bottom</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '#toc-content',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: 'article',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+            // For headings inside relative or absolute positioned containers within content.
+            hasInnerContainers: true,
+        });
+    </script>
 
 
     
 
 
+    <!-- Footer -->
+    <hr />
 
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 text-center">
+                <ul class="list-inline">
+                    
 
+                    
 
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <ul class="copyright footer-menu list-inline">
+                    
+                    
+                        <li class="list-inline-item">
+                            
+                            
+                            <a href="/">
+                                
+                                    Home
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/archives">
+                                
+                                    Archives
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/tags">
+                                
+                                    Tags
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/categories">
+                                
+                                    Categories
+                                
+                            </a>
+                        </li>
+                    
+                        <li class="list-inline-item">
+                            
+                                <span class="copyright-split">&nbsp;|&nbsp;</span>
+                            
+                            
+                            <a href="/about">
+                                
+                                    About
+                                
+                            </a>
+                        </li>
+                    
+                </ul>
+                <p class="copyright footer-author">
+                    &copy; -2023 
+                    <a rel="external" class="copyright-link" href="" target="_blank">John Doe</a><br/>
+                    Powered by <a rel="external" class="copyright-link" href="https://hexo.io/" target="_blank">Hexo</a>  
+                    <span class="copyright-split">&nbsp;|&nbsp;&nbsp;</span>
+                    Theme <a rel="external" class="copyright-link" href="https://github.com/luswdev/hexo-theme-clean.git" target="_blank">Clean</a>
+                    
+                    
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
-  <footer class="page-footer"><div class="clearfix">
-</div>
-<!-- <div class="right-foot"> -->
-<!--     <div class="firstrow"> -->
-<!--         <a href="#top" target="_self"> -->
-<!--         <svg class="i-caret-right" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"> -->
-<!--             <path d="M10 30 L26 16 10 2 Z"></path> -->
-<!--         </svg> -->
-<!--         </a> -->
-<!--         © XXX 2016-2020 -->
-<!--     </div> -->
-<!--     <div class="secondrow"> -->
-<!--         <a target="_blank" rel="noopener" href="https://github.com/sanderfei/sanderfei.github.io"> -->
-<!--         Sander's Blogs -->
-<!--         </a> -->
-<!--     </div> -->
-<!-- </div> -->
-<div class="clearfix">
-</div>
 </footer>
-  <script type="text/javascript">
-
-// disqus scripts
 
 
-// dropdown scripts
-function $(s) {
-    return document.querySelector(s)
-  }
+    <!-- After footer scripts -->
+    <!-- jQuery -->
+<script src="//cdn.jsdelivr.net/npm/jquery@2.1.4/dist/jquery.min.js"></script>
 
-  function $$(s) {
-    return document.querySelectorAll(s)
-  }
-  var dropDownElArr = $$('.dropdown')
-  for (var i = 0; i < dropDownElArr.length; i += 1) {
-    dropDownElArr[i].addEventListener('click', function(event) {
-      var content = this.querySelector('.dropdown-content')
-      event.stopPropagation()
-      if (content.className.indexOf('open') < 0) {
-        content.classList.add('open')
-      } else {
-        content.classList.remove('open')
-      }
-    })
-  }
-  document.body.addEventListener('click', function() {
-    var dropDownContentElArr = $$('.dropdown-content')
-    for (var i = 0; i < dropDownContentElArr.length; i += 1) {
-      dropDownContentElArr[i].classList.remove('open')
-    }
-  })
+<!-- For drop down -->
+<script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 
-  // smooth scroll
-  $$('a[href^="#"]').forEach(e=>{
-    e.addEventListener("click", function(e) {
-      e.preventDefault();
-      var t = this.getAttribute("href").substr(1);
-      $(`[id='${decodeURIComponent(t)}']`).scrollIntoView({
-        behavior: "smooth"
-      }),
-      t === "top" ? history.replaceState(null, null, " ") : history.pushState(null, null, `#${t}`)
-    })
-  })
+<!-- Bootstrap -->
+<script src="//cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+<!-- Gallery -->
+<script src="//cdn.jsdelivr.net/npm/lightgallery@1.6.11/dist/js/lightgallery-all.min.js"></script>
+<!-- Busuanzi -->
 
-// search
-var searchEl = document.querySelector("#local-search-input")
-if (searchEl) searchEl.addEventListener('keydown', function(e) {
-  if (e.key === 'Enter') {
-    var s = e.target.value
-    window.open('//www.google.com/search?q=site:http://example.com%20' + s, '_blank').focus()
-  }
-})
 
+<!-- Search script -->
+
+<script src="/js/search.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        searchFunc( '/search.xml' , 'searchInput', 'searchResult');
+    });
 </script>
+
+
+
+<script src="/js/main.js"></script>
+
+
+
+    <!-- Search Modal -->
+    <!-- Modal -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content overflow-auto">
+            <div class="modal-header">
+                <input type="text" class="form-control" placeholder="Searching Keywords..." id="searchInput">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div id="searchResult">
+                    <div class="search-empty text-center text-muted p-5">
+                        <i class="far fa-meh"></i>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html>
